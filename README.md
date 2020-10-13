@@ -13,3 +13,8 @@ App en Angular que consulta el archivo guardado en /assets. Si el archivo no est
 ## Server
 
 Solución con Webscrapping utilizando el módulo cheerio para parsear el sitio web, extraer las faqs y posteiormente guardarlas en /assets del cliente. Lo ideal sería que se guardar en el server o en un servicio cloud y que el cliente consulte apuntando a esa dirección. Podría considerarse mecanimos de autenticación utilizando SSH pero para simplificar la solución se decidió guardarla en /assets
+
+### Para generar el archivo
+```
+node index
+```

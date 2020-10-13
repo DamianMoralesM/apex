@@ -32,7 +32,10 @@ axios.get(url).then(response => {
     console.log(faq.length)
     console.log(faq)
 
-    let data = JSON.stringify(faq);
+    let data = JSON.stringify({
+        data: faq,
+        lastEdit: Date()
+    });
     fs.writeFileSync('../client/my-app/src/assets/faq.json', data); // TODO: This could be placed in a S3 Bucket or another cloud service
     
 }).catch(err => {

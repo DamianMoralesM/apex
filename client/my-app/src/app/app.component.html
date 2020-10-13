@@ -1,3 +1,5 @@
+
+<span *ngIf="errorRead" >Error Reading File</span>
 <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
   
   <ngb-panel title="{{faq.question}}" *ngFor="let faq of faqs">
@@ -7,6 +9,8 @@
     </ng-template>
   </ngb-panel>
 
-  <span *ngFor="let faq of faqs">{{faq}}</span>
+  
 
 </ngb-accordion>
+
+<span *ngIf="lastEdit" >Last Edit was on: {{lastEdit}}</span>
